@@ -2,11 +2,10 @@ package com.executivePOS.RestAPI.services.impl;
 
 import com.executivePOS.RestAPI.domains.entities.UserEntity;
 import com.executivePOS.RestAPI.exceptions.UserExceptions.UserExceptions;
-import com.executivePOS.RestAPI.respositories.UserRepository;
+import com.executivePOS.RestAPI.repositories.UserRepository;
 import com.executivePOS.RestAPI.services.UserService;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 public class UserServiceImpl implements UserService {

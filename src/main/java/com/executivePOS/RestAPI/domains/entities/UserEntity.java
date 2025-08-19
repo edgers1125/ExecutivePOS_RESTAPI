@@ -20,7 +20,7 @@ import java.time.LocalDate;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
-    private Long id;
+    private Longs id;
 
     @Column(nullable = false, unique = true)
     @Email(message = "Email should be valid")

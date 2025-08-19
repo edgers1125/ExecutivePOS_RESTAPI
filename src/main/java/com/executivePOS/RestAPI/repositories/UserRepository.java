@@ -1,4 +1,4 @@
-package com.executivePOS.RestAPI.respositories;
+package com.executivePOS.RestAPI.repositories;
 
 import com.executivePOS.RestAPI.domains.entities.UserEntity;
 import org.springframework.data.repository.CrudRepository;
