@@ -22,6 +22,7 @@ public class UserEntity {
     private long id;
 
     @Column(nullable = false, unique = true)
+    @Email(message = "Email should be valid")
     private String email;
     @Column(nullable = false)
     private String password;
