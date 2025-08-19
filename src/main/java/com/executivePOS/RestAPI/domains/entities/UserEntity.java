@@ -3,6 +3,7 @@ package com.executivePOS.RestAPI.domains.entities;
 import com.executivePOS.RestAPI.domains.embeddables.Address;
 import com.executivePOS.RestAPI.domains.embeddables.GovtInfo;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,7 +20,7 @@ import java.time.LocalDate;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_id_seq")
-    private long id;
+    private Long id;
 
     @Column(nullable = false, unique = true)
     @Email(message = "Email should be valid")
