@@ -6,4 +6,7 @@ public interface UserService {
     UserEntity createUser(UserEntity userEntity);
     void deleteUser(Long id);
     Boolean userExists(Long id);
+    UserEntity updateUserInfo(Long id, UserEntity userEntity);
+    Boolean emailExists(String email);
+    UserEntity getUser(Long id);
 }
